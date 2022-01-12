@@ -1,0 +1,48 @@
+<div *ngFor="let i of pessoas" role="dialog" class="modal fade" id="exampleModalToggle" [ngClass]="{'show':showModal}"
+  aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="2">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Pagamento para {{i.name}} </h5>
+        <button type="button" class="btn-close" (click)="showModal=false" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label"></label>
+          <input id=" mask-currency " type=" text " formControlName=" currency " currency required placeholder="R$ 0,00"
+            [brmasker]="{money: true, thousand: '.',  decimalCaracter: ',', decimal: '2'}">
+        </div>
+
+        <div class="form-group">
+          <br>
+          <select [(ngModel)]="numero" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let i of cards">{{i.card_number}}</option>
+
+          </select>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button class="btn btn-primary" (click)="pagando()" (click)="showModal=false" (click)="showModal2=true"
+          data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Pagar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" [ngClass]="{'show':showModal2}" aria-hidden="true"
+  aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Recibo do pagamento</h5>
+        <button type="button" class="btn-close" (click)="showModal2=false" (click)="cancel()" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>{{mensagem}} </p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>

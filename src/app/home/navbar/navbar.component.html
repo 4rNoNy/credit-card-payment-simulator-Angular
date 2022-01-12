@@ -1,0 +1,31 @@
+<nav *ngIf="showNav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text" href="#">PayCard</a>
+    <button class="navbar-toggler navBoton" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text" aria-current="page" href="#">Home</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<nav *ngIf="!showNav" class="navbar navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text ml-5 " href="#">
+      <img
+        src="https://imagensemoldes.com.br/wp-content/uploads/2020/06/Gr%C3%A1fico-Cart%C3%A3o-de-Cr%C3%A9dito-PNG.png"
+        alt="" width="30" height="24" class="d-inline-block align-text-top">
+      Seja bem vindo!
+    </a>
+  </div>
+</nav>

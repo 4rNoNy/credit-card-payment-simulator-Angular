@@ -1,0 +1,190 @@
+.section-time{
+  text-align: center;
+  color: #111111;
+    background-color: #f2f2f2;
+    background-image: none;
+    display: block;
+    box-sizing: border-box;
+}
+.container-section{
+  min-height: 813px;
+  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.h2-text{
+  font-size: 3rem;
+    font-weight: 700;
+    margin: 60px auto 0;
+    box-sizing: border-box;
+}
+.container-time{
+  width: 1140px;
+    margin: 63px 0 60px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.incluir-time{
+  grid-template-columns: repeat(1, calc(50% - 15px));
+    min-height: 200px;
+    grid-gap: 30px;
+    display: grid;
+    box-sizing: border-box;
+}
+.card-time{
+  border-radius: 30px;
+  left: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  box-sizing: border-box;
+}
+.time-layout{
+  border-radius: 30px !important;
+  padding: 30px;
+  position: relative;
+    flex: 1;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.time-img{
+  width: 186px;
+    height: 186px;
+    background-image: url("../images/foto.png");
+    background-position: 50% 50%;
+    margin: 0 auto 0 0;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.time-container-texto{
+  width: 282px;
+    min-height: 260px;
+    margin: -186px 0 0 auto;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.time-container-layout{
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.time-p{
+  position: relative;
+  font-weight: 400;
+    margin: 0 auto 0 0;
+    color: #b3b3b3;
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+}
+.time-h3{
+  position: relative;
+  font-size: 1.25rem;
+    text-transform: none;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    margin: 19px auto 0 0;
+    color: #478ac9;
+    line-height: 1.2;
+    text-align: left;
+    box-sizing: border-box;
+}
+.time-p2{
+  position: relative;
+  font-weight: 300;
+    font-style: normal;
+    margin: 19px 0 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+.container-social{
+  position: relative;
+  height: 32px;
+  min-height: 16px;
+  width: 156px;
+  min-width: 108px;
+  margin: 37px auto 0 0;
+  display: flex;
+  box-sizing: border-box;
+}
+.social-url{
+  color: currentColor;
+  height: 100%;
+    display: inline-block;
+    flex: 1;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.icon-fb{
+  display: flex;
+    height: 100%;
+    line-height: 0;
+    border-width: 0px;
+    border-radius: 50%;
+    color: #478ac9;
+    box-sizing: border-box;
+}
+.fb-link{
+  fill: #478ac9;
+  overflow: hidden;
+  box-sizing: border-box;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.icon-twitter{
+  display: flex;
+    height: 100% ;
+    line-height: 0;
+    border-width: 0px;
+    border-radius: 50%;
+    color: #478ac9;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+.twitter-link{
+  fill: #478ac9;
+  overflow: hidden;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.icon-instagram{
+  display: flex;
+    height: 100%;
+    border-radius: 50%;
+    color: #478ac9;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+.instagram-link{
+  fill: #478ac9;
+  overflow: hidden;
+  box-sizing: border-box;
+  vertical-align: middle;
+  cursor: pointer;
+  
+}
+.content{
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+}
